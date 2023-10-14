@@ -4,26 +4,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home | Funkoshop</title>
+    <link rel="stylesheet" href="index.css">
   </head>
 
   <body>
     <!-- INICIO HEADER -->
     <header>
-      <nav>
+      <nav class="navbar">
         <picture>
-          <a href="./index.html">
+          <a href="index.html">
             <img
               src="./img/branding/logo_light_horizontal.svg"
               alt="Isologotipo de la marca Funkoshop"
+              class="navbar__logo"
             />
           </a>
         </picture>
-        <ul>
-          <li><a href="./pages/shop.html">SHOP</a></li>
-          <li><a href="./pages/contacto.html">CONTACTO</a></li>
-          <li><a href="./pages/login.html">LOGIN</a></li>
+        <ul class="navbar__menu">
+          <li><a class="navbar__link" href="shop.html">SHOP &#709;</a></li>
+          <li><a class="navbar__link" href="./pages/contacto.html">CONTACTO</a></li>
+          <li><a class="navbar__link" href="./pages/login.html">LOGIN</a></li>
           <li>
-            <a href="./pages/cart.html">
+            <a class="navbar__link" href="./pages/cart.html">
               <img src="./img/icons/cart-icon.svg" alt="icono de carrito" />
             </a>
           </li>
@@ -33,24 +35,25 @@
     <!-- FIN HEADER -->
     <main>
       <!--INICIO BANNER -->
-      <section>
+      <section class="banner">
         <article>
           <h3>Nuevos Ingresos</h3>
           <p>Descubrí el próximo Funko Pop de tu colección</p>
-          <a href="./pages/shop.html">Shop</a>
+          <a href="./pages/shop.html">SHOP</a>
         </article>
       </section>
       <!--FIN BANNER -->
 
       <!-- SECCION PRINCIPAL DE LA WEB -->
       <main>
-        <section>
+        <section class="collection">
           <article>
             <h3>Star Wars & The Mandalorian</h3>
             <p>
               Disfruta de una saga que sigue agregando personajes a su
               colección.
             </p>
+            <hr>
             <a href="./pages/shop.html">VER COLECCIÓN</a>
           </article>
           <picture>
@@ -60,13 +63,14 @@
             />
           </picture>
         </section>
-        <section>
+        <section class="collection">
           <article>
             <h3>POKEMON INDIGO</h3>
             <p>
               Atrapa todos los que puedas y disfruta de una colección llena de
               amigos.
             </p>
+            <hr>
             <a href="./pages/shop.html">VER COLECCIÓN</a>
           </article>
           <picture>
@@ -76,10 +80,11 @@
             />
           </picture>
         </section>
-        <section>
+        <section class="collection">
           <article>
             <h3>HARRY POTTER</h3>
             <p>Revive los recuerdos de una saga llena de magia y encanto.</p>
+            <hr>
             <a href="./pages/shop.html">VER COLECCIÓN</a>
           </article>
           <picture>
@@ -94,9 +99,12 @@
 
       <!-- INICIO LANZAMIENTOS -->
       <section>
-        <h2>Últimos lanzamientos</h2>
-        <ul>
-          <li>
+        <h2 class="releases-title">Últimos lanzamientos</h2>
+        <ul class="product-row">
+          <li class="product">
+            <div class="new-container">
+              <div class="new">Nuevo</div>
+            </div>
             <article>
               <a href="">
                 <picture>
@@ -109,12 +117,15 @@
                   <p>STAR WARS</p>
                   <h4>STORMTROOPER LIGHTSABER</h4>
                   <p>$ 1799,99</p>
-                  <p>3 CUOTAS SIN INTERÉS</p>
+                  <p class="cuotas">3 CUOTAS SIN INTERÉS</p>
                 </div>
               </a>
             </article>
           </li>
-          <li>
+          <li class="product">
+            <div class="new-container">
+              <div class="new">Nuevo</div>
+            </div>
             <article>
               <a href="">
                 <picture>
@@ -127,12 +138,15 @@
                   <p>POKEMON</p>
                   <h4>PIDGEOTTO</h4>
                   <p>$ 1799,99</p>
-                  <p>3 CUOTAS SIN INTERÉS</p>
+                  <p class="cuotas">3 CUOTAS SIN INTERÉS</p>
                 </div>
               </a>
             </article>
           </li>
-          <li>
+          <li class="product">
+            <div class="new-container">
+              <div class="new">Nuevo</div>
+            </div>
             <article>
               <a href="">
                 <picture>
@@ -145,7 +159,7 @@
                   <p>HARRY POTTER</p>
                   <h4>LUNA LOVEGOOD LION MASK</h4>
                   <p>$ 1799,99</p>
-                  <p>3 CUOTAS SIN INTERÉS</p>
+                  <p class="cuotas">3 CUOTAS SIN INTERÉS</p>
                 </div>
               </a>
             </article>
@@ -156,23 +170,25 @@
     </main>
     <!--INICIO FOOTER -->
     <footer>
-      <section>
-        <nav>
+      <section >
+        <nav class="navbar">
           <ul>
             <li><a href="./pages/shop.html">SHOP</a></li>
-            <li><a href="./pages/register.html">REGISTRARSE</a></li>
-            <li><a href="./pages/login.html">LOGIN</a></li>
+            <li><a href="./pages/login.html">INGRESAR</a></li>
             <li><a href="./pages/contacto.html">CONTACTO</a></li>
           </ul>
           <picture>
             <img
               src="./img/branding/isotype.svg"
               alt="Isotipo de la marca Funkoshop"
+              class=".navbar__logo"
             />
           </picture>
         </nav>
       </section>
-      <p>All rights reserved 2023 - Funkoshop & copyright</p>
+      <div class="copyright">
+        <p >All rights reserved 2023 - Funkoshop & copyright</p>
+      </div>
     </footer>
     <!--FIN FOOTER -->
   </body>
