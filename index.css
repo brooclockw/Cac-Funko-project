@@ -145,13 +145,23 @@ gap: var(--spacing-36);
     grid-template-columns: 55% 45%;
 }
 
+.collection article .m-1{
+    margin: 1rem;
+}
+
 .collection article{
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align:left;
     padding: var(--spacing-68);
+    
 }
+
+.collection .price{
+    font-size:var(--font-xlarge);
+}
+
 .collection h3{
     font-size: var(--font-jumbo);
 }
@@ -159,7 +169,7 @@ gap: var(--spacing-36);
     margin-top: var(--spacing-20);
     border-color: var(--primary-solid);
 }
-.collection a{
+.collection .btn-colecction{
     text-align: center;
     -webkit-appearance: button;
     -moz-appearance: button;
@@ -173,10 +183,23 @@ gap: var(--spacing-36);
     border-radius: var(--spacing-12);
 }
 
+.collection .btn-red{
+    color: white;
+    padding: var(--spacing-8);
+    background-color: #FF3333;
+    border: none;
+    cursor: pointer;
+}
+
+.collection .input-num{
+    padding: var(--spacing-8);
+    width: 15%;
+}
+
 .product{
     padding: var(--spacing-28);
 }
-.product .cuotas{
+.cuotas{
     color: var(--secondary-solid);
 }
 
