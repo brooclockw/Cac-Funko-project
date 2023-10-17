@@ -310,3 +310,73 @@ footer ul li:hover{
     border-color: var(--primary-solid);
     
 }
+
+
+.cart{
+
+}
+
+.resumen-box{
+    display: flex;
+    justify-content: end;
+}
+
+.resumen{
+    width: 30%;
+    margin:4rem;
+}
+
+.resumen .title-resumen{
+    display: flex;
+    justify-content: end;
+}
+
+.resumen .title-box{
+    font-size: var(--font-xlarge);
+    border-bottom: solid 2px var(--primary-solid);
+    margin: 1rem;
+}
+
+.resumen table{
+    margin-top: 2rem;
+    -webkit-box-shadow: -4px 2px 38px -15px rgba(5,3,3,1);
+-moz-box-shadow: -4px 2px 38px -15px rgba(5,3,3,1);
+box-shadow: -4px 2px 38px -15px rgba(5,3,3,1);
+    width: 100%;
+    text-align: left;
+    font-size: 1.5rem;
+    padding: 2rem;
+}
+
+.resumen table td{
+    text-align: right;
+}
+
+.resumen table .line-bottom{
+    border-bottom: 2px solid var(--primary-solid);
+}
+
+.resumen .btn-resumen{
+    width: 100%;
+    margin-top: 3rem;
+    height: 20%;
+    background-color: var(--primary-solid);
+    color: var(--light-bg-solid);
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.cart table{
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    padding: 2rem;
+}
+
+.cart table img{
+    width: 20%;
+}
+
+.cart-row{
+    border: solid 2px black !important;
+}
